@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SERIE I</title>
     
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -15,19 +18,31 @@
 <div class="container-fluid">
 
   <div class="row">
-    <div class="col-12 text-end">
-      <p class="display-6">UNIVERSIDAD SAN CARLOS DE GUATEMALA -USAC-</p>
-      <p class="display-6">ESCUELA DE PROFESORES DE ENSEÑANZA MEDIA -EFPEM-</p>
-      <p class="display-6">PROFESORADO EN COMPUTACION EN INFORMATICA -PEM-</p>
+    <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+      <img src="img/usac.png" alt="" class="rounded img-fluid d-block mx-auto mx-md-0" style="width:200px; height:200px;">
     </div>
-    <div class="col-12">
+    <div class="col-lg-4 col-md-4 col-sm-12 text-lg-start text-sm-center">
+      <p class="titulo">UNIVERSIDAD SAN CARLOS DE GUATEMALA -USAC-</p>
+      <p class="titulo">ESCUELA DE PROFESORES DE ENSEÑANZA MEDIA -EFPEM-</p>
+      <p class="titulo">PROFESORADO EN COMPUTACION EN INFORMATICA -PEM-</p>
+    </div>
+        <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+      <img src="img/efpem.png" alt="" class="rounded img-fluid d-block mx-auto mx-md-0" style="width:250px; height:200px;">
+    </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 text-md-center text-lg-start">
+      <p class="lead">Creado Por:</p>
+      <p class="lead">Francisco Javier Godoy Espinoza :D </p>
+      <p class="lead">Carné: 201900209</p>
+      </div>
+    
+   <!-- <div class="col-12">  
       <img src="img/usac.png" alt="" class="rounded  float-start" style="width:200px; height:200px;">
       <img src="img/efpem.png" alt="" class="rounded float-end" style="width:250px; height:200px;">
-    </div>
+    </div>-->
   </div>
    <div class="row">
       <div class="col-12">  
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-none">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">PARCIAL II Programacion cientifica comercial</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +64,9 @@
     </div>
 
 
+    <div class="row">
+      <div class="col-lg-12"></div>
+    </div>
 
 
 
