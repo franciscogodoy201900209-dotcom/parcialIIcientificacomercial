@@ -1,14 +1,13 @@
-# Usamos la imagen oficial de PHP con el servidor Apache ya configurado
 FROM php:8.2-apache
 
-# Instalamos extensiones comunes por si usas bases de datos o librerías
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Cambiar el puerto de Apache para que coincida con lo que Render espera
+RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
 
-# Copiamos todo el contenido de tu carpeta actual al servidor de Render
+# Copiar tus archivos al servidor
 COPY . /var/www/html/
 
-# Damos permisos de lectura a los archivos para que el servidor pueda mostrarlos
+# Asegurar permisos de lectura
 RUN chown -R www-data:www-data /var/www/html
 
-# Exponemos el puerto 80
-EXPOSE 80
+# Exponer el puerto dinámico
+EXPOSE ${PORT}
