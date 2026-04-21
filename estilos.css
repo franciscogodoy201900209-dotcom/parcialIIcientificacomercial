@@ -18,3 +18,7 @@ h1, p, a, span{
     text-shadow: 0 2px 8px rgba(0,0,0,0.5);
     color: #ffffff !important;
 }
+
+.cartas h5, .texto_cartas{
+    color:black !important;
+}

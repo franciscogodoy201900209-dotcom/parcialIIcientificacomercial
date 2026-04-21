@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERIE I</title>
+    <title>SERIE II</title>
     
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -18,18 +18,18 @@
 <div class="container-fluid">
 
   <div class="row">
-    <div class="col-md-2 col-sm-12 text-center">
+    <div class="col-lg-2 col-md-4 col-sm-12 text-center">
       <img src="img/usac.png" alt="" class="rounded img-fluid d-block mx-auto mx-md-0" style="width:200px; height:200px;">
     </div>
-    <div class="col-md-4 col-sm-12 text-lg-start text-sm-center">
+    <div class="col-lg-4 col-md-4 col-sm-12 text-lg-start text-sm-center">
       <p class="titulo">UNIVERSIDAD SAN CARLOS DE GUATEMALA -USAC-</p>
       <p class="titulo">ESCUELA DE PROFESORES DE ENSEÑANZA MEDIA -EFPEM-</p>
       <p class="titulo">PROFESORADO EN COMPUTACION EN INFORMATICA -PEM-</p>
     </div>
-        <div class="col-md-2 col-sm-12 text-center">
+        <div class="col-lg-2 col-md-4 col-sm-12 text-center">
       <img src="img/efpem.png" alt="" class="rounded img-fluid d-block mx-auto mx-md-0" style="width:250px; height:200px;">
     </div>
-      <div class="col-md-4 col-sm-12 text-sm-center">
+      <div class="col-lg-4 col-md-12 col-sm-12 text-md-center text-lg-start">
       <p class="lead">Creado Por:</p>
       <p class="lead">Francisco Javier Godoy Espinoza :D </p>
       <p class="lead">Carné: 201900209</p>
@@ -64,6 +64,9 @@
     </div>
 
 
+    <div class="row">
+      <div class="col-lg-12"></div>
+    </div>
 
 
 
