@@ -64,9 +64,32 @@
     </div>
 
 
-    <div class="row">
-      <div class="col-lg-12"></div>
+   <div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+        <div class="card shadow-lg" style="background: rgba(255, 255, 255, 0.96); border-radius: 20px; border: none;">
+            <div class="card-body p-5">
+                <h2 class="text-center mb-4" style="color: #d63384; font-weight: 700;">Compra de flores </h2>
+                
+                <form action="procesar_poo.php" method="POST">
+                    <h5 style="color: #6c757d; font-weight: 600; border-bottom: 2px solid #f8d7da; padding-bottom: 5px;"> Flor</h5>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4"><input type="text" name="flor" class="form-control" placeholder="Tipo de Flor" required></div>
+                        <div class="col-md-4"><input type="text" name="color" class="form-control" placeholder="Color" required></div>
+                        <div class="col-md-4"><input type="number" name="precio" class="form-control" placeholder="Precio unitario" required></div>
+                    </div>
+
+                    <h5 style="color: #6c757d; font-weight: 600; border-bottom: 2px solid #f8d7da; padding-bottom: 5px;">Ramo de flores</h5>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4"><input type="number" name="cantidad" class="form-control" placeholder="Cantidad" required></div>
+                        <div class="col-md-8"><input type="text" name="nota" class="form-control" placeholder="Dedicatoria especial" required></div>
+                    </div>
+
+                    <button type="submit" class="btn w-100" style="background: linear-gradient(135deg, #ff9a9e, #fad0c4); color: #d63384; border-radius: 30px; padding: 12px; font-weight: bold; border: 1px solid #ff9a9e;">Enviar Detalle</button>
+                </form>
+            </div>
+        </div>
     </div>
+</div>
 
 
 

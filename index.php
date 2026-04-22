@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container-fluid mb-2">
 
   <div class="row">
     <div class="col-lg-2 col-md-4 col-sm-12 text-center">
@@ -71,84 +71,121 @@
           <div class="card-body text-center">
             <h5 class="card-title text-center">Condicionales</h5>
             <p class="card-text texto_cartas">Llena el formulario con tus datos, si eres la persona adecuada y tus datos coinciden. Saldra una pesetaña con algo especial :D</p>
-          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal1">Abrir formulario</a>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal1">Abrir formulario</a>
           </div>
         </div>    
         </div> 
-      <div class="col-lg-3 col-md-4 col-sm-12">
+      <div class="col-lg-3 col-md-4 col-sm-12 text-center">
         <div class="card bg-none">
           <img src="img/michu.png" class="card-img-top" alt="...">
           <div class="card-body ">
             <h5 class="card-title text-center">Bucles</h5>
             <p class="card-text texto_cartas">Sera una secuencia repetitiva, hasta que los datos coincidan sea afirmativa, de lo contrario saldra algo.</p>
 
-            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">Abrir formulario</a>
+            <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal2">Abrir formulario</a>
           </div>
         </div>       
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-12">
+      <div class="col-lg-3 col-md-4 col-sm-12 text-center">
         <div class="card bg-none">
           <img src="img/gatito.png" class="card-img-top img-fluid" alt="...">
           <div class="card-body ">
-            <h5 class="card-title text-center">Funciones</h5>
-            <p class="card-text texto_cartas">Rellena el formulario mira lo que pasara :D</p>
+            <h5 class="card-title text-center">Funciones de texto</h5>
+            <p class="card-text texto_cartas">Rellena el formulario con un texto y mira lo que pasara :D</p>
             <br>
-            <br>
-            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Abrir formulario</a>
+            
+            <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal3">Abrir formulario</a>
           </div>
         </div>       
       </div>
       </div>
   
-
+</div>
       <!-- modales -->
-      <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content w-100">
-          <div class="modal-header">
-            <h5 class="modal-title fs-5" id="exampleModalLabel">Llena el formulario con tus datos</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form action="condicional.php" method="POST">
-              <div class="row g-3">
-                <div class="col">
-                  <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Escribe tu nombre :D" required>
-                </div>
-                <div class="col">
-                  <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Escribe tu apellido u.u/" required>
-                </div>
-              </div>
-              <br>
-              <div class="row g-3">
-                <div class="col">
-                  <input type="number" name="edad" id="edad" class="form-control" placeholder="Escribe tu Edad :^)" required>
-                </div>
-                <div class="col">
-                <select class="form-select form-select" name="postre" id="postre" required>
-                  <option selected disabled>Elige tu postre Fav :3 </option>
-                  <option value="1">Roles de canela bimbo</option>
-                  <option value="2">Anguila cocinada con pepinillos</option>
-                  <option value="3">Carpincho de chocolate</option>
-                </select> 
-                </div>
-                <br>
-                 <input type="submit" class="btn btn-danger" value="Registrar">
-              </div>
-             
-            </form> 
-          </div>
-        <!--  <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-        -->
-          </div>
-        </div>
+      <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">Llena el formulario con tus datos (≧◡≦)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <!---->
-
+      <div class="modal-body">
+        <form action="condicional.php" method="POST">
+          <div class="row g-3">
+            <div class="col">
+              <input type="text" name="nombre" class="form-control" placeholder="Escribe tu nombre :D" required>
+            </div>
+            <div class="col">
+              <input type="text" name="apellido" class="form-control" placeholder="Escribe tu apellido u.u/" required>
+            </div>
+          </div>
+          <br>
+          <div class="row g-3">
+            <div class="col">
+              <input type="number" name="edad" class="form-control" placeholder="Escribe tu Edad :^)" required>
+            </div>
+            <div class="col">
+              <select class="form-select" name="postre" required>
+                <option selected disabled>Elige tu postre Fav :3 </option>
+                <option value="1">Roles de canela bimbo</option>
+                <option value="2">Anguila cocinada con pepinillos</option>
+                <option value="3">Carpincho de chocolate</option>
+              </select> 
+            </div>
+          </div>
+          <br>
+          <input type="submit" class="btn btn-danger w-100" value="Registrar">
+        </form> 
+      </div>
+    </div>
   </div>
+</div>
 
+<!-- modal 2 -->
+
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">Llena el formulario con la cantidad de flores que te gustaria recibir ≧'◡'≦</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="bucle.php" method="POST">
+          <div class="mb-3">
+            <label class="form-label">¿Cuántas flores quieres ver hoy ? ʕ•́ᴥ•̀ʔっ♡ </label>
+            <input type="number" name="cantidad" class="form-control" min="1" max="50" placeholder="Escribe cuantas quieres ver" required>
+          </div>
+          <input type="submit" class="btn btn-danger w-100" value="Generar cantidad de flores ≧◠ᴥ◠≦">
+        </form> 
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- modal 3 -->
+
+  
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">Escribe como te fue hoy :D</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="funciones_texto.php" method="POST">
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Escribe aqui el mensaje: :3 :</label>
+            <textarea name="mensaje" id="mensaje" class="form-control" rows="3" placeholder="Escribe u.u ... " required></textarea>
+            <div class="form-text">Usaremos PHP para transformar y analizar tu texto, y darte algo bonito :D</div>
+          </div>
+          <input type="submit" class="btn btn-danger w-100" value="Enviar Mensaje  ≧◠ᴥ◠≦">
+        </form> 
+      </div>
+    </div>
+  </div>
+</div> 
 
 <!-- scripts -->
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

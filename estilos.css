@@ -22,3 +22,69 @@ h1, p, a, span{
 .cartas h5, .texto_cartas{
     color:black !important;
 }
+/* Importación de fuente Poppins (la que ya usas) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tarjeta principal de resultados */
+.card-resultado {
+    background: rgba(255, 255, 255, 0.9); /* Blanco casi sólido para legibilidad */
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    margin-top: 50px;
+}
+
+/* Título con estilo */
+h2 {
+    color: #4a4a4a;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el texto del mensaje original */
+.mensaje-original {
+    color: #6c757d;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.alerta-personalizada {
+    background-color: #fff3cd !important; 
+    border: 1px solid #ffeeba !important;
+    color: #856404 !important;
+    border-radius: 15px !important;
+    padding: 25px !important;
+    text-align: left; /* Para que las funciones se lean como lista */
+    margin-top: 20px;
+}
+
+.alerta-personalizada strong {
+    color: #533f03;
+}
+
+.btn-regresar {
+    background-color: #ff6b6b; 
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.btn-regresar:hover {
+    background-color: #ee5253;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+    color: white;
+}

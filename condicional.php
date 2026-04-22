@@ -7,7 +7,8 @@ $postre = $_POST['postre'];
 if ($nombre == "Karla" && $apellido == "Jiménez" && $edad == 20 && $postre = 1) {
     header("Location: pag.html");
     exit();
-} else {
-    echo "No eres la persona adecuada.";
+} else  {
+    echo '<h1>No eres la persona adecuada</h1>';
+    echo '<a href="index.php">Regresar</a> ';
 }
 ?>
