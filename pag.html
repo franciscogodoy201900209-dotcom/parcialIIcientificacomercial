@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #ff6b81;
+            text-align: center;
+        }
+
+        .esfera-textos {
+            width: 80vmin; /* Un poco más grande para que luzca mejor */
+            height: 80vmin;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tagcloud {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        
+        .tagcloud:hover {
+            color: #ff6b81;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cosas que me encantan de ti</h1>
+
+    <audio id="miMusica" loop>
+        <source src="img/a.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <button id="btnMusica" onclick="controlarMusica()" style="position: fixed; bottom: 20px; right: 20px; z-index: 100; background: none; border: 1px solid #ff6b81; color: #ff6b81; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; font-size: 20px;">
+        ♪
+    </button>    
+    
+    <div class="esfera-textos"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script>
+        const misTextos = [
+            'Tu sonrisa', 'Tus ojos', 'Tu inteligencia', 'Lo increíble que eres :D',
+            'Tu sentido del humor', 'Tu forma de ser', 'Tu Dedicacion', 'Tu voz',
+            'Tu perseverancia', 'Tu entrega', 'Tu carisma', 'Tus excentricidades',
+            'Tu curiosidad', 'Tu memoria de Dory', 'Tu locura tan linda', 'Todo'
+        ];
+
+        const opciones = {
+            radius: Math.min(window.innerWidth, window.innerHeight) / 2.5,
+            maxSpeed: 'fast',
+            initSpeed: 'normal',
+            direction: 135,
+            keep: true
+        };
+
+        TagCloud('.esfera-textos', misTextos, opciones);
+
+        // --- LÓGICA DE MÚSICA ---
+        const musica = document.getElementById('miMusica');
+        const btn = document.getElementById('btnMusica');
+
+        function controlarMusica() {
+            if (musica.paused) {
+                musica.play();
+                btn.style.backgroundColor = "rgba(255, 107, 129, 0.2)";
+            } else {
+                musica.pause();
+                btn.style.backgroundColor = "transparent";
+            }
+        }
+
+        document.body.addEventListener('click', () => {
+            if (musica.paused) musica.play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>

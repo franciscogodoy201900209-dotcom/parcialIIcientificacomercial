@@ -68,10 +68,10 @@
       <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card bg-none">
           <img src="img/descarga.jpg" class="card-img-top img-fluid" alt="...">
-          <div class="card-body ">
+          <div class="card-body text-center">
             <h5 class="card-title text-center">Condicionales</h5>
             <p class="card-text texto_cartas">Llena el formulario con tus datos, si eres la persona adecuada y tus datos coinciden. Saldra una pesetaña con algo especial :D</p>
-          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Abrir formulario</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal1">Abrir formulario</a>
           </div>
         </div>    
         </div> 
@@ -80,9 +80,9 @@
           <img src="img/michu.png" class="card-img-top" alt="...">
           <div class="card-body ">
             <h5 class="card-title text-center">Bucles</h5>
-            <p class="card-text texto_cartas">Sera una secuencia repetitiva, hasta que la respeusta sea afirmativa, de lo contrario saldra algo.</p>
+            <p class="card-text texto_cartas">Sera una secuencia repetitiva, hasta que los datos coincidan sea afirmativa, de lo contrario saldra algo.</p>
 
-            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Abrir formulario</a>
+            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">Abrir formulario</a>
           </div>
         </div>       
       </div>
@@ -90,8 +90,10 @@
         <div class="card bg-none">
           <img src="img/gatito.png" class="card-img-top img-fluid" alt="...">
           <div class="card-body ">
-            <h5 class="card-title text-center">Funciones de texto</h5>
-            <p class="card-text texto_cartas">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <h5 class="card-title text-center">Funciones</h5>
+            <p class="card-text texto_cartas">Rellena el formulario mira lo que pasara :D</p>
+            <br>
+            <br>
             <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Abrir formulario</a>
           </div>
         </div>       
@@ -102,17 +104,44 @@
       <!-- modales -->
       <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content w-100">
           <div class="modal-header">
-            <h5 class="modal-title fs-5" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title fs-5" id="exampleModalLabel">Llena el formulario con tus datos</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ...
+            <form action="condicional.php" method="POST">
+              <div class="row g-3">
+                <div class="col">
+                  <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Escribe tu nombre :D" required>
+                </div>
+                <div class="col">
+                  <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Escribe tu apellido u.u/" required>
+                </div>
+              </div>
+              <br>
+              <div class="row g-3">
+                <div class="col">
+                  <input type="number" name="edad" id="edad" class="form-control" placeholder="Escribe tu Edad :^)" required>
+                </div>
+                <div class="col">
+                <select class="form-select form-select" name="postre" id="postre" required>
+                  <option selected disabled>Elige tu postre Fav :3 </option>
+                  <option value="1">Roles de canela bimbo</option>
+                  <option value="2">Anguila cocinada con pepinillos</option>
+                  <option value="3">Carpincho de chocolate</option>
+                </select> 
+                </div>
+                <br>
+                 <input type="submit" class="btn btn-danger" value="Registrar">
+              </div>
+             
+            </form> 
           </div>
-          <div class="modal-footer">
+        <!--  <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
+        -->
           </div>
         </div>
       </div>
