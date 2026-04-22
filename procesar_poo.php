@@ -50,7 +50,7 @@ class Ramo extends Flor {
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8 card-resultado text-center">
-                <h2 style="color: #fff;">¡Detalle Preparado! ✨ (✿◠‿◠) </h2>
+                <h2 style="color: #000;">¡Detalle Preparado! ✨ (✿◠‿◠) </h2>
                 <hr>
                 <div class="mensaje-original text-start">
                     <strong>Tipo de flor: </strong> <?php echo $detalle->descripcionBase(); ?>
